@@ -43,9 +43,7 @@ Consider the length of the sequential data input has length $`l`$, or $`X \in \m
 
 
 
-### Input
+### Input and Output
+`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$.
 
- 
 
-### Output 
-The module `torch.nn.RNN` will complete a full loop of $`X`$ from 
