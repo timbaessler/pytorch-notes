@@ -1,6 +1,6 @@
 # Recurrent Neural Networks
 
-Consider a $'(B, T, K)'$ dimensional matrix
+Consider a $`(B, T, K)`$ dimensional matrix
 
 ```python
 import torch
