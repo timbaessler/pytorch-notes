@@ -5,7 +5,7 @@ To display math a Tex browser extension like https://github.com/nschloe/xdoc can
 
 
 # Recurrent Neural Networks
-Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes the batch size, $`t`$ the sequence length, $`k`$ the number of features. For forecasting sequential data this repository shows the implementation of Recurrent Neural Networks (RNNs) using the deep learning library PyTorch. 
+Consider  sequential data input $`X_t \in \mathbb{R}^{nxk}`$ at time $`t`$ where $`n`$ denotes the batch size,  $`k`$ the number of features. For forecasting sequential data this repository shows the implementation of Recurrent Neural Networks (RNNs) using the deep learning library PyTorch. 
 
 ## Vanilla RNN
 
@@ -25,7 +25,7 @@ where the RNN layer computes
 H_t = \text{tanh} \left( X W_{xh}+ H_{t-1} W_{hh} + b_{h} \right)
 ```
 where
-* $`X_t \in \mathbb{R}^{nxk}`$ 
+* 
 * $`W_{xh} \in \mathbb{R}^{kxh}`$
 * $`H_{t-1} \in \mathbb{R}^{nxh}`$
 * $`W_{hh} \in \mathbb{R}^{hxh}`$
