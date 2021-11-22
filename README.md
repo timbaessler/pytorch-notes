@@ -8,8 +8,7 @@ To display math a Tex browser extension like https://github.com/nschloe/xdoc can
 Consider  sequential data input $`X_t \in \mathbb{R}^{nxk}`$ at time $`t`$ where $`n`$ denotes the batch size,  $`k`$ the number of features. For forecasting sequential data this repository shows the implementation of Recurrent Neural Networks (RNNs) using the deep learning library PyTorch. 
 
 ## Vanilla RNN
-
-
+`torch.nn.RNN`is a Elman RNN layer implementing a full unrolling of sequential data input.
 ```python
 import torch
 import torch.nn as nn
@@ -34,4 +33,12 @@ where
 with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore addition results in $`H_{t} \in \mathbb{R}^{nxh}`$.
 
 
-The output of `torch.nn.RNN`
+
+
+
+### Input
+
+Consider the length of the sequential data input has length $`l`$, or $`X \in \mathbb{R}^{lxnxk} `$. 
+
+### Output 
+The module `torch.nn.RNN` will complete a full loop of $`X`$ from 
