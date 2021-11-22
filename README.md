@@ -34,13 +34,16 @@ with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore
 
 
 ### RNN Unrolling
+
+Consider the length of the sequential data input has length $`l`$, or $`X \in \mathbb{R}^{lxnxk} `$. Since the Elman-Unit uses for each time step $`t`$ the previous hidden state, the Vanilla RNN can be unrolled to a simple neural network with $`l`$ hidden layers.
+
 ![alt text](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
 
 
 ### Input
 
-Consider the length of the sequential data input has length $`l`$, or $`X \in \mathbb{R}^{lxnxk} `$. 
+ 
 
 ### Output 
 The module `torch.nn.RNN` will complete a full loop of $`X`$ from 
