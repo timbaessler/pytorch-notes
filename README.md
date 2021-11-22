@@ -24,7 +24,6 @@ where the RNN layer computes
 H_t = \text{tanh} \left( X W_{xh}+ H_{t-1} W_{hh} + b_{h} \right)
 ```
 where
-* 
 * $`W_{xh} \in \mathbb{R}^{k \times h}`$
 * $`H_{t-1} \in \mathbb{R}^{n \times h}`$
 * $`W_{hh} \in \mathbb{R}^{h \times h}`$
