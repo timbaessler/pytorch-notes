@@ -19,7 +19,8 @@ rnn = nn.RNN(k, h)
 ```
 where the RNN layer computes
 ```math
-H^{(t)}_{(HxH)} = \text{tanh} \left( W^T_{((K+1)xH)} X^{(t)}_{(Tx(K+1))} + W_{((H+1)xH)} H^{(t-1)}_{(HxH)} \right)
-
+H_t = \text{tanh) \left(X_t W_{xh}+ W_{hh} + b_{h} \right)
 ```
+where
+* something
 where the first matrix multiplication results in a $`(TxH)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix. Addition results in a $`(TxH)`$ matrix.
