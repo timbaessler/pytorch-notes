@@ -23,6 +23,7 @@ H_t = \text{tanh} \left( X_t W_{xh}+ W_{hh} + b_{h} \right)
 ```
 where
 * $`X_t \in \mathbb{R}^{txd}`$ 
+* $`W_{xh} \in \mathbb{R}^{kxh}`$
 
 
 
