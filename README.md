@@ -33,6 +33,8 @@ where
 with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore addition results in $`H_{t} \in \mathbb{R}^{nxh}`$.
 
 
+### RNN Unrolling
+![alt text](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
 
 
