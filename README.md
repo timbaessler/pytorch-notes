@@ -22,5 +22,8 @@ where the RNN layer computes
 H_t = \text{tanh} \left( X_t W_{xh}+ W_{hh} + b_{h} \right)
 ```
 where
-* something
+* $`X_t \in \mathbb{R}^{txd}`$ 
+
+
+
 where the first matrix multiplication results in a $`(TxH)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix. Addition results in a $`(TxH)`$ matrix.
