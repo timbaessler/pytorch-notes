@@ -1,5 +1,7 @@
 # Recurrent Neural Networks
 
+## (Vanilla) Recurrent Neural Network
+
 Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes the batch size, $`t`$ the sequence length, $` k`$ the number of featurs.
 
 
