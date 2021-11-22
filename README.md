@@ -60,11 +60,13 @@ h0 = torch.randn(num_layers, n, h)
 # Model
 rnn = nn.RNN(k, h, num_layers)
 # Model Output
-out, hn = rnn(x, h0)
-# out: (l, n, h), hn: (num_layers, n, h)
+H, hn = rnn(x, h0)
+# H: (l, n, h), hn: (num_layers, n, h)
 ```
 
 ### Create PyTorch Model
+To create a  model for classification, the last hidden state is passed into a fully connected layer. This can be implemented by the following model:
+
 ```python
 class RNNModel(nn.Module):
 	def __init__(self, k, h, num_layers, num_classes):
@@ -82,7 +84,7 @@ class RNNModel(nn.Module):
 		# H0 Initialization
 		h0 = torch.autograd.Variable(torch.zeros, self.num_layers, x.size(0), self.h)
 		# x: (l, n, k), h0: (num_layers, n, h)
-		out, hn = self.rnn(x, h0)
+		H, hn = self.rnn(x, h0)
 		# out: (l, n, h), hn: (num_layers, n, h)
 		out = self.fc(out[-1])
 		return out
