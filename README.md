@@ -1,3 +1,5 @@
 ```math
-f(x) = \frac{x}{y}
+\begin{bmatrix}
+1\\
+\end{bmatrix}
 ```
