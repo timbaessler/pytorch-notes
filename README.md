@@ -19,12 +19,15 @@ rnn = nn.RNN(k, h)
 ```
 where the RNN layer computes
 ```math
-H_t = \text{tanh} \left( X_t W_{xh}+ H_{t-1} W_{hh} + b_{h} \right)
+H_t = \text{tanh} \left( X W_{xh}+ H_{t-1} W_{hh} + b_{h} \right)
 ```
 where
-* $`X_t \in \mathbb{R}^{txd}`$ 
+* $`X_t \in \mathbb{R}^{nxk}`$ 
 * $`W_{xh} \in \mathbb{R}^{kxh}`$
-* 
+* $`H_{t-1} \in \mathbb{R}^{nxh}`$
+* $`W_{hh} \in \mathbb{R}^{hxh}`$
+* $`b_{h} \in \mathbb{R}^{1xh}`$
+
 
 
 
