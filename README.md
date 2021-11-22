@@ -1,5 +1,5 @@
-To display math a Tex browser extension like https://github.com/nschloe/xdoc can be used.
-[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee) To display math a Tex browser extension like https://github.com/nschloe/xdoc can be used.
+
 
 
 # Recurrent Neural Networks
