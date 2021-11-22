@@ -30,7 +30,8 @@ where
 * $`W_{hh} \in \mathbb{R}^{h \times h}`$
 * $`b_{h} \in \mathbb{R}^{1 \times h}`$
 
-with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore addition results in $`H_{t} \in \mathbb{R}^{n \times h}`$.
+with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore addition results in $`H_{t} \in \mathbb{R}^{n \times h}`$. Then this hidden state is
+
 
 
 ### RNN Unrolling
@@ -44,6 +45,6 @@ Consider the length of the sequential data input has length $`l`$, or $`X \in \m
 
 
 ### Input and Output
-`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$.
+`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$, after $`l`$ steps returning the 
 
 
