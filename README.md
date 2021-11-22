@@ -19,7 +19,7 @@ rnn = nn.RNN(k, h)
 ```
 where the RNN layer computes
 ```math
-H_t = \text{tanh) \left(X_t W_{xh}+ W_{hh} + b_{h} \right)
+H_t = \text{tanh} \left( X_t W_{xh}+ W_{hh} + b_{h} \right)
 ```
 where
 * something
