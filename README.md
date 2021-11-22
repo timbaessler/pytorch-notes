@@ -22,4 +22,4 @@ where the RNN layer computes
 H^{(t)}_{(HxH)} = \text{tanh} \left( W^T_{((K+1)xH)} X^{(t)}_{(Tx(K+1))} + W_{((H+1)xH)} H^{(t-1)}_{(HxH)} \right)
 
 ```
-where the first matrix multiplication results in a $`(TxK)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix.
+where the first matrix multiplication results in a $`(TxH)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix. Addition results in a $`(TxH)`$ matrix.
