@@ -34,4 +34,4 @@ where
 with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore addition results in $`H_{t} \in \mathbb{R}^{nxh}`$.
 
 
-where the first matrix multiplication results in a $`(TxH)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix. Addition results in a $`(TxH)`$ matrix.
+The output of `torch.nn.RNN`
