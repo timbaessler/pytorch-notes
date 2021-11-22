@@ -1,1 +1,5 @@
-
+```math
+\begin{bmatrix}
+1\\
+\end{bmatrix}
+```
