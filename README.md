@@ -1,8 +1,7 @@
 # Recurrent Neural Networks
+Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes the batch size, $`t`$ the sequence length, $` k`$ the number of features. For forecasting sequential data this repository shows the implementation of RNNs using the deep learning library PyTorch.
 
 ## (Vanilla) Recurrent Neural Network
-
-Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes the batch size, $`t`$ the sequence length, $` k`$ the number of featurs.
 
 
 ```python
