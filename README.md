@@ -45,6 +45,6 @@ Consider the length of the sequential data input has length $`l`$, or $`X \in \m
 
 
 ### Input and Output
-`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$, after $`l`$ steps returning both the full hidden state matrix $`H \in \mathbb{R}^{l \times h}`$ as well as the last hidden state which also may include the number of layers $`d`$ in case of stacked RNNs $`h_n \in \mathbb{R}^{ \text{num_{layers}} \times n \times h }`$
+`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$, after $`l`$ steps returning both the full hidden state matrix $`H \in \mathbb{R}^{l \times h}`$ as well as the last hidden state which also may include the number of layers $`d`$ in case of stacked RNNs $`h_n \in \mathbb{R}^{ num_{layers} \times n \times h }`$
 
 
