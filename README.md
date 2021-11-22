@@ -44,7 +44,48 @@ Consider the length of the sequential data input has length $`l`$, or $`X \in \m
 
 
 
-### Input and Output
-`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$, after $`l`$ steps returning both the full hidden state matrix $`H \in \mathbb{R}^{l \times h}`$ as well as the last hidden state which also may include the number of layers $`d`$ in case of stacked RNNs $`h_n \in \mathbb{R}^{ num_{layers} \times n \times h }`$
+### Input and Output of RNN Class
+`torch.nn.RNN` completes a full loop of $`X`$ from $`t=0, t=1, ..., t=l`$, after $`l`$ steps returning both the full hidden state matrix $`H \in \mathbb{R}^{l \times h}`$ as well as the last hidden state which also may include the number of layers in case of stacked RNNs $`h_n \in \mathbb{R}^{ num_{layers} \times n \times h }`$.
+
+```python
+# Parameters
+n = 1
+l = 5
+h = 2
+k = 3
+num_layers = 1
+# Inputs
+x = torch.randn(l, n, k)
+h0 = torch.randn(num_layers, n, h)
+# Model
+rnn = nn.RNN(k, h, num_layers)
+# Model Output
+out, hn = rnn(x, h0)
+# out: (l, n, h), hn: (num_layers, n, h)
+```
+
+### Create PyTorch Model
+```python
+class RNNModel(nn.Module):
+	def __init__(self, k, h, num_layers, num_classes):
+		super(RNNModel, self).__init__()
+		# Parameters
+		self.k = k # The number of input features
+		self.h = h # The number of features in the hidden state
+		self.num_layers = num_layers # The number of recurrent layers
+		# RNN
+		self.rnn = nn.RNN(k, h, num_layers)
+		# Fully Connected Layer
+		self.fc = nn.Linear(h, num_classes)
+
+	def forward(self, x):
+		# H0 Initialization
+		h0 = torch.autograd.Variable(torch.zeros, self.num_layers, x.size(0), self.h)
+		# x: (l, n, k), h0: (num_layers, n, h)
+		out, hn = self.rnn(x, h0)
+		# out: (l, n, h), hn: (num_layers, n, h)
+		out = self.fc(out[-1])
+		return out
+```
 
 
