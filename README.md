@@ -14,6 +14,9 @@ Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes t
 import torch
 import torch.nn as nn
 
+k = 3 # The number of input features
+h = 2 # The number of features in the hidden state
+
 rnn = nn.RNN(k, h)
 
 ```
