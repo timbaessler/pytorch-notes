@@ -34,7 +34,7 @@ with the two matrix multiplications resulting in two $`nxh`$ matrices. Therefore
 
 ### RNN Unrolling
 
-Consider the length of the sequential data input has length $`l`$, or $`X \in \mathbb{R}^{l \times n \times k} `$. Since the Elman-Unit uses for each time step $`t`$ the previous hidden state, the Vanilla RNN can be unrolled to a simple neural network with $`l`$ hidden layers.
+Consider the length of the sequential data input has length $`l`$, or $`X \in \mathbb{R}^{l \times n \times k} `$. Since the Elman-Unit uses for each time step $`t`$ the previous hidden state $`H_{t-1}`$, it can be unrolled to $`l`$ hidden layers however using the same weights $`W_{xh}`$ and $`W_{hh}`$.
 
 ![alt text](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
