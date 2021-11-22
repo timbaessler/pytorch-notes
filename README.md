@@ -1,6 +1,7 @@
 # Recurrent Neural Networks
 
-Consider a $`(B, T, K)`$ dimensional matrix
+Consider a $`(b, t, k)`$ dimensional sequential data input where $`b`$ denotes the batch size, $`t`$ the sequence length, $` k`$ the number of featurs.
+
 
 ```python
 import torch
