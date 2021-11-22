@@ -28,7 +28,7 @@ where
 * $`W_{hh} \in \mathbb{R}^{hxh}`$
 * $`b_{h} \in \mathbb{R}^{1xh}`$
 
-
+with the two matrix multiplications resulting in a $`nxh`$ matrix.
 
 
 where the first matrix multiplication results in a $`(TxH)`$ matrix and the second matrix multiplication in a $`(HxH)`$ matrix. Addition results in a $`(TxH)`$ matrix.
