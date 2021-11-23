@@ -79,8 +79,8 @@ class RNNModel(nn.Module):
 		h0 = torch.autograd.Variable(torch.zeros, self.num_layers, x.size(0), self.h)
 		# x: (l, n, k), h0: (num_layers, n, h)
 		H, hn = self.rnn(x, h0)
-		# out: (l, n, h), hn: (num_layers, n, h)
-		out = self.fc(out[-1])
+		# H: (l, n, h), hn: (num_layers, n, h)
+		out = self.fc(H[-1])
 		return out
 ```
 
