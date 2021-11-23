@@ -1,5 +1,5 @@
 # PyTorch Notes
-This repository contains eplanation and implementation of several PyTorch deep learning modules.
+This repository contains explanation and implementation of several PyTorch deep learning modules.
 
 # Display Math
 To display math the following browser extension may be used:
