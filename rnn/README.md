@@ -1,9 +1,3 @@
-[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
-
-To display math a Tex browser extension like https://github.com/nschloe/xdoc can be used.
-
-
-
 # Recurrent Neural Networks
 Consider  sequential data input $`X_t \in \mathbb{R}^{nxk}`$ at time $`t`$ where $`n`$ denotes the batch size,  $`k`$ the number of features. For forecasting sequential data this repository shows the implementation of Recurrent Neural Networks (RNNs) using the deep learning library PyTorch.
 
